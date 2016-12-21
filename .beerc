@@ -1,0 +1,13 @@
+{
+  "entry": "src/index.js",
+  "publicPath": "/",
+  "extraBabelPresets": [
+    "react"
+  ],
+  "extraBabelPlugins": [
+    "transform-runtime"
+  ],
+  "autoprefixer": null,
+  "proxy": null,
+  "env": null
+}
