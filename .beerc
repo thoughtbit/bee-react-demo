@@ -9,5 +9,15 @@
   ],
   "autoprefixer": null,
   "proxy": null,
-  "env": null
+  "env": {
+    "development": {
+      "cssSourceMap": false
+    },
+    "production": {
+      "cssSourceMap": true,
+      "isGzip": true,
+      "gzipExtensions": ["js", "css"],
+      "analyze": true
+    }
+  }
 }
