@@ -15,10 +15,10 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.8.0",
-    "bees-cli": "^0.4.6"
+    "bees-cli": "^0.4.8"
   },
   "scripts": {
-    "start": "bee start",
+    "start": "PORT=12306 bee start",
     "build": "rm -rf dist && bee build"
   }
 }

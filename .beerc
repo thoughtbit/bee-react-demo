@@ -8,6 +8,9 @@
     "transform-runtime"
   ],
   "autoprefixer": null,
+  "externals": null,
+  "multipage": true,
+  "define": null,
   "proxy": null,
   "env": {
     "development": {
