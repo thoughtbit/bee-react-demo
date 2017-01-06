@@ -18,8 +18,6 @@
     },
     "production": {
       "cssSourceMap": true,
-      "isGzip": true,
-      "gzipExtensions": ["js", "css"],
       "analyze": true
     }
   }
