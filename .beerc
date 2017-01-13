@@ -1,17 +1,18 @@
 {
-  "entry": "src/index.js",
   "publicPath": "/",
-  "extraBabelPresets": [
-    "react"
-  ],
-  "extraBabelPlugins": [
-    "transform-runtime"
-  ],
+  "extraBabelPresets": ["react"],
+  "extraBabelPlugins": ["transform-runtime"],
   "autoprefixer": null,
   "externals": null,
   "multipage": true,
   "define": null,
-  "proxy": null,
+  "proxy": {
+    "/api": {
+      "target": "http://jsonplaceholder.typicode.com/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/api" : "" }
+    }
+  },
   "env": {
     "development": {
       "cssSourceMap": false
