@@ -1,9 +1,15 @@
 {
+  "use": "react",
   "publicPath": "/",
-  "extraBabelPresets": ["react"],
-  "extraBabelPlugins": ["transform-runtime"],
+  "extraBabelPresets": [
+    "react"
+  ],
+  "extraBabelPlugins": [
+    "react-require"
+  ],
+  "disableCSSModules": false,
   "autoprefixer": null,
-  "externals": null,
+  "externals": [],
   "multipage": true,
   "define": null,
   "proxy": {
@@ -19,7 +25,11 @@
     },
     "production": {
       "cssSourceMap": true,
-      "analyze": true
+      "analyze": true,
+      "dllPlugin": {
+        "name": "bees",
+        "include": []
+      }
     }
   }
 }
