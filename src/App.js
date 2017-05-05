@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import DownloadMenu from '@/components/DownloadMenu'
+import DownloadMenu from '~/components/DownloadMenu'
 import logo from './logo.svg'
 import './App.css'
 
@@ -14,7 +14,10 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <DownloadMenu></DownloadMenu>
+        <div className="container">
+          <h5 className="title">我是容器</h5>
+        </div>
+        <DownloadMenu></DownloadMenu>  
       </div>
     )
   }

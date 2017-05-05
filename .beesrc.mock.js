@@ -11,6 +11,7 @@
 
 import { join } from 'path'
 import { readdirSync } from 'fs'
+import objectAssign from 'object-assign'
 const mock = {
   // Forward 到另一个服务器
   // 'GET https://assets.daily/*': 'https://assets.online/',
@@ -29,6 +30,6 @@ const mock = {
   // 'GET /local': './local.js',
 }
 readdirSync(join(__dirname + '/mock')).forEach(function (file) {
-  Object.assign(mock, require('./mock/' + file))
+  objectAssign(mock, require('./mock/' + file))
 })
 export default mock

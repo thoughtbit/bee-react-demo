@@ -1,6 +1,7 @@
 {
   "use": "react",
   "publicPath": "/",
+  "style": ["css", "scss"],
   "extraBabelPresets": [
     "react"
   ],

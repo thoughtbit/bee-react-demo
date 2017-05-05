@@ -1,11 +1,12 @@
 {
   "name": "bee-react-demo",
-  "version": "0.6.4",
+  "version": "0.6.7",
   "private": true,
   "scripts": {
     "dev": "bees server",
     "start": "bees server",
     "build": "rm -rf dist && bees build",
+    "css": "node-sass src/container/index.scss dist/static/index.css",
     "test": "bees test"
   },
   "dependencies": {
@@ -13,15 +14,13 @@
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
-    "bees-cli": "0.6.4",
-    "babel-preset-react": "^6.23.1",
     "babel-plugin-react-require": "^3.0.0",
-    "babel-eslint": "^7.2.1",
-    "eslint": "^3.12.2",
-    "eslint-config-airbnb": "^13.0.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^2.2.3",
-    "eslint-plugin-react": "^6.8.0",
-    "mockjs": "^1.0.1-beta3"
+    "babel-preset-react": "^6.23.1",
+    "babel-runtime": "^6.23.0",
+    "mockjs": "^1.0.1-beta3",
+    "node-sass": "^4.5.2",
+    "qs": "6.4.0",
+    "sass-loader": "^6.0.3",
+    "webpack": "^2.5.0"
   }
 }
