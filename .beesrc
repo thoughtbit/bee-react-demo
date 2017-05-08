@@ -26,11 +26,14 @@
     },
     "production": {
       "cssSourceMap": true,
-      "analyze": true,
-      "dllPlugin": {
-        "name": "bees",
-        "include": []
-      }
+      "analyze": true
     }
+  },
+  "dllPlugin": {
+    "name": "bees",
+    "exclude": [
+      "babel-runtime"
+    ],
+    "include": []
   }
 }

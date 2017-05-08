@@ -1,0 +1,21 @@
+SyntaxError: Unexpected token (7:2)
+
+[0m [90m  5 | [39m
+ [90m  6 | [39m[33mReactDOM[39m[33m.[39mrender(
+[31m[1m>[22m[39m[90m  7 | [39m  [33m<[39m[33mApp[39m [33m/[39m[33m>[39m[33m,[39m
+ [90m    | [39m  [31m[1m^[22m[39m
+ [90m  8 | [39m  document[33m.[39mgetElementById([32m'root'[39m)[33m,[39m
+ [90m  9 | [39m)
+ [90m 10 | [39m[0m
+
+Error
+    at transpile (/Users/moocss/.nvm/versions/node/v7.2.0/lib/node_modules/bees-cli/node_modules/babel-loader/lib/index.js:61:13)
+    at Object.module.exports (/Users/moocss/.nvm/versions/node/v7.2.0/lib/node_modules/bees-cli/node_modules/babel-loader/lib/index.js:163:20)
+    at applySyncOrAsync (/Users/moocss/.nvm/versions/node/v7.2.0/lib/node_modules/bees-cli/node_modules/happypack/lib/applyLoaders.js:341:21)
+    at apply (/Users/moocss/.nvm/versions/node/v7.2.0/lib/node_modules/bees-cli/node_modules/happypack/lib/applyLoaders.js:268:5)
+    at /Users/moocss/.nvm/versions/node/v7.2.0/lib/node_modules/bees-cli/node_modules/happypack/lib/applyLoaders.js:131:7
+    at applyPitchLoader (/Users/moocss/.nvm/versions/node/v7.2.0/lib/node_modules/bees-cli/node_modules/happypack/lib/applyLoaders.js:184:14)
+    at applyPitchLoader (/Users/moocss/.nvm/versions/node/v7.2.0/lib/node_modules/bees-cli/node_modules/happypack/lib/applyLoaders.js:192:14)
+    at applyPitchLoaders (/Users/moocss/.nvm/versions/node/v7.2.0/lib/node_modules/bees-cli/node_modules/happypack/lib/applyLoaders.js:222:4)
+    at applyLoaders (/Users/moocss/.nvm/versions/node/v7.2.0/lib/node_modules/bees-cli/node_modules/happypack/lib/applyLoaders.js:116:3)
+    at HappyWorker.compile (/Users/moocss/.nvm/versions/node/v7.2.0/lib/node_modules/bees-cli/node_modules/happypack/lib/HappyWorker.js:32:3)

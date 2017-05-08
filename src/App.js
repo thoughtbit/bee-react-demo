@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import DownloadMenu from '~/components/DownloadMenu'
-import logo from './logo.svg'
-import './App.css'
+import React, { Component } from 'react';
+import DownloadMenu from '~/components/DownloadMenu';
+import logo from './logo.svg';
+import './App.css';
 
 class App extends Component {
   render() {
@@ -17,10 +17,10 @@ class App extends Component {
         <div className="container">
           <h5 className="title">我是容器</h5>
         </div>
-        <DownloadMenu></DownloadMenu>  
+        <DownloadMenu />
       </div>
-    )
+    );
   }
 }
 
-export default App
+export default App;

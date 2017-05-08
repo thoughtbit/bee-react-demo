@@ -1,6 +1,6 @@
 function List(props) {
   return (
-    <ul className={'list list-' + props.importance}>
+    <ul className={`list list-${props.importance}`}>
       {props.children}
     </ul>
   );
@@ -16,4 +16,4 @@ function DownloadMenu() {
   );
 }
 
-export default DownloadMenu
+export default DownloadMenu;

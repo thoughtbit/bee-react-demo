@@ -1,14 +1,28 @@
 {
   "parser": "babel-eslint",
   "extends": "airbnb",
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true,
+    "browser": true
+  },
   "rules": {
-    "semi": [2, "never"],
+    "no-console": [0],
+    "no-unused-vars": [0],
+    "indent": [2, 2, { "SwitchCase": 1 }],  // 2空格缩进，Switch case有缩进
+    "no-multiple-empty-lines": [2, { "max": 2 }],     // 最多两行空行，少了不够，多了没用
+    "space-before-function-paren": [0, "always"],     // 不关心函数括号前是否有空格
+    "comma-dangle": [2, "only-multiline"],            // 只有多行的时候才允许尾部的多余逗号
+    "semi": [2, "always"],
     "generator-star-spacing": [0],
     "consistent-return": [0],
     "react/forbid-prop-types": [0],
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
     "global-require": [1],
     "import/prefer-default-export": [0],
+    "import/first": [0],
+    "react/react-in-jsx-scope": [0],
     "react/jsx-no-bind": [0],
     "react/prop-types": [0],
     "react/prefer-stateless-function": [0],

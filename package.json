@@ -6,14 +6,17 @@
     "dev": "bees server",
     "start": "bees server",
     "build": "rm -rf dist && bees build",
-    "css": "node-sass src/container/index.scss dist/static/index.css",
-    "test": "bees test"
+    "build:dll": "bees build-dll",
+    "test": "bees test",
+    "lint": "eslint --ext .js src test",
+    "precommit": "npm run lint"
   },
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
+    "babel-eslint": "^7.1.1",
     "babel-plugin-react-require": "^3.0.0",
     "babel-preset-react": "^6.23.1",
     "babel-runtime": "^6.23.0",
@@ -21,6 +24,13 @@
     "node-sass": "^4.5.2",
     "qs": "6.4.0",
     "sass-loader": "^6.0.3",
-    "webpack": "^2.5.0"
+    "webpack": "^2.5.0",
+    "eslint": "^3.14.0",
+    "eslint-loader": "1.7.1",
+    "eslint-friendly-formatter": "^2.0.7",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0"
   }
 }
