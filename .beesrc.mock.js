@@ -32,4 +32,4 @@ const mock = {
 readdirSync(join(__dirname + '/mock')).forEach(function (file) {
   objectAssign(mock, require('./mock/' + file))
 })
-export default mock
+module.exports =  mock
