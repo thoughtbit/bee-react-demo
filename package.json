@@ -1,6 +1,6 @@
 {
   "name": "bee-react-demo",
-  "version": "0.6.7",
+  "version": "0.6.13",
   "private": true,
   "scripts": {
     "dev": "bees server",
@@ -12,12 +12,16 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "prop-types": "^15.5.10",
+    "autobind-decorator": "^1.4.1",
+    "lodash.throttle": "^4.1.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
     "babel-plugin-react-require": "^3.0.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-react": "^6.23.1",
     "babel-runtime": "^6.23.0",
     "mockjs": "^1.0.1-beta3",

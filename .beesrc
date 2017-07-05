@@ -6,7 +6,8 @@
     "react"
   ],
   "extraBabelPlugins": [
-    "react-require"
+    "react-require",
+    "transform-decorators-legacy"
   ],
   "disableCSSModules": false,
   "autoprefixer": null,

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DownloadMenu from '~/components/DownloadMenu';
+import ElementQuery from '~/components/ElementQuery';
 import logo from './logo.svg';
 import './App.css';
 
@@ -17,6 +18,11 @@ class App extends Component {
         <div className="container">
           <h5 className="title">我是容器</h5>
         </div>
+        <ElementQuery queries={{ medium: 600, large: 900 }} >
+          <div>
+            ◻️ ◽️ ◼︎ 600px and 900px. ◼︎ ◽️ ◻️
+          </div>
+        </ElementQuery>
         <DownloadMenu />
       </div>
     );
